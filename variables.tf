@@ -1,3 +1,1 @@
-variable "gcp_creds" {
-  type = "string"
-}
+variable "gcp_creds" {}

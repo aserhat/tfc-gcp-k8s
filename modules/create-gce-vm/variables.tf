@@ -1,3 +1,5 @@
+variable "gcp_creds"  {}
+
 variable "server_name_prefix" {
   type = "string"
 }

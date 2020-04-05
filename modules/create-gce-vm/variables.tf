@@ -10,3 +10,8 @@ variable "server_count" {
 variable "server_machine_type" {
   type = "string"
 }
+
+variable = "machine_tags" {
+  type = list(string)
+  default = []
+}

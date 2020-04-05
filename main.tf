@@ -4,7 +4,7 @@ module "etcd" {
   server_count        = 1
   server_machine_type = "f1-micro"
   gcp_creds           = "${var.gcp_creds}"
-  tags                = ["k8s", "etcd"]
+  machine_tags                = ["k8s", "etcd"]
 }
 
 module "masters" {
@@ -13,7 +13,7 @@ module "masters" {
   server_count        = 1
   server_machine_type = "f1-micro"
   gcp_creds           = "${var.gcp_creds}"
-  tags                = ["k8s", "master"]
+  machine_tags                = ["k8s", "master"]
 }
 
 module "nodes" {
@@ -22,5 +22,5 @@ module "nodes" {
   server_count        = 1
   server_machine_type = "f1-micro"
   gcp_creds           = "${var.gcp_creds}"
-  tags                = ["k8s", "node"]
+  machine_tags                = ["k8s", "node"]
 }

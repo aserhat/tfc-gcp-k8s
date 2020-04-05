@@ -12,6 +12,6 @@ variable "server_machine_type" {
 }
 
 variable "machine_tags" {
-  type = "list(string)"
-  default = [""]
+  type = "list"
+  default = []
 }
